@@ -39,5 +39,5 @@ domain2.run(function(){
 });
 
 
-domain1.remove(emitter1);
+domain1.remove(emitter1);//emitter1的错误处理在监听器和domain都被移除了
 emitter1.emit('error', new Error('转换为异常，系统将崩溃!'));

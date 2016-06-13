@@ -1,0 +1,20 @@
+{
+  "name": "guoxiaofen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eventproxy": "^0.3.4",
+    "jquery": "^2.2.3"
+  },
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}

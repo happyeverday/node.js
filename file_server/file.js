@@ -1,5 +1,6 @@
 /**
  * Created by JNC on 2016/6/8.
+ * 文件读写模块fs
  */
 var fs = require('fs');
 

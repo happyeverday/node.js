@@ -1,12 +1,13 @@
 /**
  * Created by happy on 16/6/4.
+ * 静态文件系统
  */
 var http = require('http');
-var url = require('url');
-var path = require('path');
-var fs = require('fs');
-var mime = require('./mime').types;
-var config = require('./config');
+var url = require('url');//解析请求
+var path = require('path');//获取文件绝对路径
+var fs = require('fs');//读取文件
+var mime = require('./mime').types;//可接受类型
+var config = require('./config');//文件存活时间等信息
 
 //创建静态的文件系统
 var server = http.createServer(function (request, response) {
@@ -40,6 +41,8 @@ var server = http.createServer(function (request, response) {
                     var contentType = mime[ext] || "text/plain";
                     response.writeHead(200, {'Content-Type': contentType});
                     response.write(file, "binary");
+                    //其实没有必要读取文件，response本身是pipe，可以直接
+                    //fs.createReadStream(filepath).pipe(response);
                     response.end();
                 }
             });

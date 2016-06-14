@@ -6,5 +6,7 @@ function greet(name){
     console.log(s + " " + name + "!");
 }
 console.log(module.exports);//输出｛｝
+exports = greet;
+console.log(module.exports);//{}
+console.log(exports);
 module.exports = greet;
-console.log(module.exports);//输出function greet

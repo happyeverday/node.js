@@ -10,7 +10,7 @@ http.createServer(function (req,res) {
     });
     req.on('end',function(){
         var html = bufferhelper.toBuffer().toString();
-        res.writeHead(200);
+        console.log(html);
         res.write("Hello World");
         res.write(html);
         res.end(html);

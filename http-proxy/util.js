@@ -1,5 +1,6 @@
 /**
  * Created by happy on 16/6/7.
+ * 继承
  */
 var util = require('util');
 function Base() {

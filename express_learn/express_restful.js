@@ -3,9 +3,10 @@
  */
 var express = require('express');
 var fs = require('fs');
+var favicons = require('connect-favicons');
 
 var app = express();
-
+app.use(favicons());
 app.get('/ListUsers',function(req,res){
    fs.readFile(__dirname + '/' + "users.json","utf8",function(err,data){
       if(err){

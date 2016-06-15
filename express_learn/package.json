@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "mongoose": "^4.4.19",
-    "express": "^4.13.4"
+    "connect-favicons": "git://github.com/theworkers/connect-favicons.git",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.19"
   },
   "devDependencies": {
     "body-parser": "^1.15.1",

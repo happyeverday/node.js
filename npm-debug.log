@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'whoami' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.1
+4 verbose config Skipping project config: /Users/happy/.npmrc. (matches userconfig)
+5 verbose request uri https://registry.npmjs.org/-/whoami
+6 verbose request no auth needed
+7 info attempt registry request try #1 at 15:35:16
+8 verbose request using bearer token for auth
+9 verbose request id 96fbfe0ac9fb8677
+10 http request GET https://registry.npmjs.org/-/whoami
+11 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+12 info attempt registry request try #2 at 15:36:42
+13 verbose request using bearer token for auth
+14 http request GET https://registry.npmjs.org/-/whoami
+15 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.18.162:443
+16 info attempt registry request try #3 at 15:38:58
+17 verbose request using bearer token for auth
+18 http request GET https://registry.npmjs.org/-/whoami
+19 verbose stack Error: connect ETIMEDOUT 23.235.43.162:443
+19 verbose stack     at Object.exports._errnoException (util.js:890:11)
+19 verbose stack     at exports._exceptionWithHostPort (util.js:913:20)
+19 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1059:14)
+20 verbose cwd /Users/happy/Documents/前端学习/node/node.js
+21 error Darwin 15.5.0
+22 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "whoami"
+23 error node v5.10.1
+24 error npm  v3.8.3
+25 error code ETIMEDOUT
+26 error errno ETIMEDOUT
+27 error syscall connect
+28 error network connect ETIMEDOUT 23.235.43.162:443
+29 error network This is most likely not a problem with npm itself
+29 error network and is related to network connectivity.
+29 error network In most cases you are behind a proxy or have bad network settings.
+29 error network
+29 error network If you are behind a proxy, please make sure that the
+29 error network 'proxy' config is set properly.  See: 'npm help config'
+30 verbose exit [ 1, true ]

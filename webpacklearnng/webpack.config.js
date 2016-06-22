@@ -3,10 +3,12 @@
  */
 var webpack = require('webpack');
 var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     //插件项
     plugins: [commonsPlugin],
+    //plugins: [commonsPlugin, new ExtractTextPlugin("[name].css")],
     //页面入口文件配置
     entry: {
         index : './src/js/page/index.js'

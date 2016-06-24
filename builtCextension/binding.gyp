@@ -7,7 +7,7 @@
             ],
             'conditions':[
                 [
-                    'OS == "mac"',
+                    'OS == "win"',
                     {
                         'libraries':['-lnode.lib']
                     }
